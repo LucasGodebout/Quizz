@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Grand Quizz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="screen">
+            <!--Page d'accueil-->
+            <div class="content-screen" id="home-screen">
+                <h1 id="name">Le Grand Quizz de Géographie</h1>
+                <div id="home-buttons">
+                    <button id="start" class="quiz-button">Commencer</button>
+                    <button id="classement" class="quiz-button">Classement</button>
+                </div>
+            </div>
+
+            <!--Page de classement-->
+            <div class="content-screen inactive" id="classement-screen">
+                <h2>Classement</h2>
+                <table id="classement-table">
+                    <tr>
+                        <th>Position</th>
+                        <th>Nom</th>
+                        <th>Score</th>
+                    </tr>
+                </table>
+                <button id="back" class="quiz-button">Retour</button>
+            </div>
+            
+            <!--Page de nom-->
+            <div class="content-screen inactive" id="name-screen">
+                <h2>Entrez votre nom</h2>
+                <input type="text" id="name-input">
+                <button id="name-submit" class="quiz-button">Valider</button>
+            </div>
+            
+            <!--Page du quizz-->
+            <div class="content-screen inactive" id="quiz-screen">
+                <div id="header-question">
+                    <div id="name">
+                        <span id="player-name"></span>
+                    </div>
+                    <div id="question-number">
+                        <span id="question-count"></span>
+                    </div>
+                </div>
+                <h2 id="question-text">Question ici</h2>
+                <div id="answer-buttons"></div>
+                <button id="next-button" class="quiz-button">Suivant</button>
+            </div>
+            
+            <!--Page de résultat-->
+            <div class="content-screen inactive" id="result-screen">
+                <h2>Résultats</h2>
+                <p id="score-text"></p>
+                <button id="restart" class="quiz-button">Recommencer</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

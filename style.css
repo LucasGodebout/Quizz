@@ -1,0 +1,136 @@
+html {
+    background-color: rgb(153, 215, 147);
+}
+body{
+    margin:10vh 0;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    background-color: lightblue;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: auto;
+}
+.content-screen{
+    width: 100%;
+    height: 73vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-screen h1{
+    font-size: 6em;
+    margin: 0;
+}
+.content-screen h2{
+    font-size: 3em;
+}
+#header-question{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+#player-name{
+    font-size: 1.5em;
+}
+#score-text{
+    font-size: 1.5em;
+}
+#home-buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: column;
+}
+.quiz-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    transition: 0.3s;
+}
+.quiz-button:hover {
+    background: darkgray;
+}
+#answer-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+.answer {
+    width: 80%;
+    padding: 10px;
+    font-size: 1.2em;
+    background: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.answer:hover {
+    background: lightgray;
+}
+.active {
+    display: flex;
+}
+.inactive {
+    display: none;
+}
+.correct {
+    background: green;
+}
+:hover.correct {
+    background: green;
+}
+.incorrect {
+    background: red;
+}
+:hover.incorrect {
+    background: red;
+}
+.disabled {
+    pointer-events: none;
+}
+
+#classement-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+#classement-table th, #classement-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+#classement-table th {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+}
+#classement-table tr:hover {
+    background-color: #f1f1f1;
+}
+#back{
+    margin-top: 20px;
+}
